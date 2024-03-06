@@ -1,0 +1,41 @@
+/* .new{
+    height: 200px;
+    width: 200px;
+    background-color: deeppink;
+    border: 1px solid black;
+
+} */
+
+/* .para{
+    color:red;
+}
+
+.newClass {
+    background-color: yellow;
+    font-size: 30px;
+} */
+
+/* div{
+    height:100px;
+    width:100px;
+    background-color: yellow;
+} */
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.newpara{
+    color: red;
+}
+
+.npara{
+    color:purple;
+    background-color: palevioletred;
+}
