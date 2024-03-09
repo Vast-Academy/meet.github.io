@@ -115,3 +115,18 @@ body{
 .hide{
     display: none;
 }
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    gap: 5rem;
+  }
+  
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+  }

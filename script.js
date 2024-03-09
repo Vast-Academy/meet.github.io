@@ -269,8 +269,13 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+const userScorePara = document.querySelector("#user-score");
+const compScorePara = document.querySelector("#comp-score");
 
 let turnO = true;
+
+let userScore = 0;
+let compScore = 0;
 
 const winPatterns = [
    [0, 1, 2],
@@ -332,6 +337,16 @@ const checkWinner = () => {
       if(pos1Val != "" && pos2Val != "" && pos3Val != "") {
          if(pos1Val === pos2Val && pos2Val === pos3Val) {
             showWinner(pos1Val);
+            // Update scores based on the winner
+            if (pos1Val === "O") {
+               userScore++;
+            } else if (pos1Val === "X") {
+               compScore++;
+            }
+            // Update score display
+            userScorePara.innerText = userScore;
+            compScorePara.innerText = compScore;
+            return; // No need to check further if a winner is found
          }
       } 
    }
